@@ -1,0 +1,38 @@
+!!!DOCTYPE html
+%html
+  %head
+    %title
+      Pickard Ayune - 17 July 2010
+    %link{:href => '/style.css', :rel => 'stylesheet'}
+    %script{:src => '/app.js'}
+  %body
+    .page
+      .masthead
+        %h1
+          Pickard Ayune
+        .price
+          25&cent;
+        .date
+          July 17th, 2010
+      .content
+        .left.column
+          .story
+            -3.times do |n|
+              %p&= LOREM[n]
+          .story
+            -3.times do |n|
+              %p&= LOREM[n]
+        .middle.column
+          .story
+            -2.times do |n|
+              %p&= LOREM[n]
+          .story
+            -4.times do |n|
+              %p&= LOREM[n]
+        .right.column
+          .story
+            -4.times do |n|
+              %p&= LOREM[n]
+          .story
+            -2.times do |n|
+              %p&= LOREM[n]
