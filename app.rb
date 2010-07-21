@@ -15,7 +15,11 @@ get '/style.css' do
 end
 
 get '/' do
-  haml :index
+  haml '2010-07'.to_sym
+end
+
+get '/:year/:month' do
+  haml "#{params[:year]}-#{params[:month]}".to_sym
 end
 
 LOREM = [

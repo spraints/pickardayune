@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title
+      Pickard Ayune -
+      = @date
+    %link{:href => '/style.css', :rel => 'stylesheet', :type => 'text/css'}
+    %script{:src => '/jquery.js'}
+    %script{:src => '/app.js'}
+  %body
+    .page
+      .masthead
+        %h1
+          Pickard Ayune
+        .price
+          25&cent;
+        .date
+          = @date
+      .content
+        =yield
