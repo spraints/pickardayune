@@ -1,9 +1,10 @@
-!!!DOCTYPE html
+!!!
 %html
   %head
     %title
       Pickard Ayune - 17 July 2010
-    %link{:href => '/style.css', :rel => 'stylesheet'}
+    %link{:href => '/style.css', :rel => 'stylesheet', :type => 'text/css'}
+    %script{:src => '/jquery.js'}
     %script{:src => '/app.js'}
   %body
     .page
@@ -13,26 +14,22 @@
         .price
           25&cent;
         .date
-          July 17th, 2010
+          July 2010
       .content
         .left.column
           .story
-            -3.times do |n|
-              %p&= LOREM[n]
-          .story
-            -3.times do |n|
-              %p&= LOREM[n]
+            %h4 Raynes Family moves in
+            %p Welcome the new neighbors!
         .middle.column
           .story
-            -2.times do |n|
-              %p&= LOREM[n]
-          .story
-            -4.times do |n|
-              %p&= LOREM[n]
+            %h4 Working hard
+            %p We'll have more news for y'all later.
         .right.column
           .story
-            -4.times do |n|
-              %p&= LOREM[n]
+            %h3 Weather
+            %p The rain seems to have let up.
           .story
-            -2.times do |n|
-              %p&= LOREM[n]
+            %h3 Crops
+            %p The corn is tall.
+            %p The soybeans are bushy.
+            %p Soybeans have been replanted in the low areas.
