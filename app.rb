@@ -1,13 +1,8 @@
 require 'rubygems'
 require 'bundler'
 Bundler.setup
-require 'compass'
 require 'sinatra'
 require 'haml'
-
-configure do
-  Compass::Configuration.instance.parse(File.expand_path(__FILE__ + '/../config/compass.config'))
-end
 
 get '/style.css' do
   content_type 'text/css', :charset => 'utf-8'
