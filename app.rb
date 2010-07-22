@@ -15,7 +15,7 @@ get '/style.css' do
 end
 
 get '/' do
-  haml '2010-07'.to_sym
+  redirect '/2010/07'
 end
 
 get '/:year/:month' do
