@@ -6,7 +6,7 @@ require 'haml'
 
 get '/style.css' do
   content_type 'text/css', :charset => 'utf-8'
-  sass :style, Compass.sass_engine_options
+  sass :style
 end
 
 get '/' do
