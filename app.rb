@@ -10,7 +10,7 @@ get '/style.css' do
 end
 
 get '/' do
-  redirect '/2010/07'
+  redirect '/2010/08'
 end
 
 get '/:year/:month' do
