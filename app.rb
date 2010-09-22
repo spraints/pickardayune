@@ -1,10 +1,12 @@
 require 'rubygems'
 require 'bundler'
 Bundler.setup
-require 'sinatra'
+require 'sinatra/base'
 require 'haml'
 
-class PickardAyune < Sinatra::Base
+module PickardAyune
+
+class App < Sinatra::Base
   get '/style.css' do
     content_type 'text/css', :charset => 'utf-8'
     sass :style
@@ -33,4 +35,6 @@ class PickardAyune < Sinatra::Base
       end
     end
   end
+end
+
 end

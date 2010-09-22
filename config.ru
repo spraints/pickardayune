@@ -1,3 +1,3 @@
 require 'rubygems'
 require 'app'
-run PickardAyune
+run PickardAyune::App
