@@ -35,6 +35,10 @@ class App < Sinatra::Base
       end
     end
   end
+
+  not_found do
+    redirect '/'
+  end
 end
 
 end
