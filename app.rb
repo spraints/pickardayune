@@ -36,9 +36,9 @@ class App < Sinatra::Base
     end
   end
 
-  not_found do
-    redirect '/'
-  end
+  #not_found do
+  #  redirect '/'
+  #end
 end
 
 end
