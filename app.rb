@@ -7,6 +7,8 @@ require 'haml'
 module PickardAyune
 
 class App < Sinatra::Base
+  set :public, File.expand_path('../public', __FILE__)
+
   get '/style.css' do
     content_type 'text/css', :charset => 'utf-8'
     sass :style
@@ -36,9 +38,9 @@ class App < Sinatra::Base
     end
   end
 
-  #not_found do
-  #  redirect '/'
-  #end
+  not_found do
+    redirect '/'
+  end
 end
 
 end
