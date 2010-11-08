@@ -7,7 +7,7 @@
     %link{:href => '/style.css', :rel => 'stylesheet', :type => 'text/css'}
     %script{:src => '/jquery.js'}
     %script{:src => '/app.js'}
-    - if production?
+    - if settings.production?
       %script{:src => 'http://search.twitter.com/search.json?q=%23pickard&callback=showtweets'}
     - else
       %script{:src => '/example_twitter_search_results.js'}
