@@ -1,4 +1,4 @@
 .story
   %h3= story.title
   -story.paragraphs.each do |p|
-    %p=p
+    %p=p.html_safe
