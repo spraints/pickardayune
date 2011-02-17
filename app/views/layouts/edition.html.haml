@@ -1,0 +1,23 @@
+!!! 5
+%html
+  %head
+    %title
+      Pickard Ayune -
+      = @date
+    =stylesheet_link_tag :all
+    =javascript_include_tag :defaults
+    - if Rails.env.production?
+      %script{:src => 'http://search.twitter.com/search.json?q=%23pickard&callback=showtweets'}
+    - else
+      %script{:src => '/example_twitter_search_results.js'}
+  %body
+    .page
+      .masthead
+        %h1
+          =link_to 'Pickard Ayune', root_path
+        .price
+          25&cent;
+        .date
+          = @date
+      .content
+        =yield
