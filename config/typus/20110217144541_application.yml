@@ -1,0 +1,14 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Story:
+  fields:
+    default: title, edition, column, paragraphs
+    form: title, edition, column, paragraphs
+  order_by: 
+  relationships: 
+  filters: created_at
+  search: title
+  application: pickardayune
+
