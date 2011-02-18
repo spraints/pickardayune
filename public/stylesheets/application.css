@@ -64,3 +64,6 @@ h1 > a:hover {
     border-right: solid 1px gray; }
   .content .right {
     /* background-color: #ff8 */ }
+
+.footer {
+  float: right; }

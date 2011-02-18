@@ -3,7 +3,7 @@ class User < Omnisocial::User
   validates :role, :inclusion => ROLE
 
   # Make any customisations here
-  def can?(action, resource, options = {}) ; debugger
+  def can?(action, resource, options = {})
     resource = resource.model_name if resource.is_a?(Class)
 
     return false if !resources.include?(resource)
