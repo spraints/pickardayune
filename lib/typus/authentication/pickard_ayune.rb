@@ -4,14 +4,18 @@ module Typus
 
       protected
 
-      include Typus::Authentication::Omnisocial
+      include Base
 
-      def authenticate ; debugger
+      def authenticate
         if current_user.present?
           redirect_to root_path unless %W(spraints farmingengineer).include?(current_user.login_account.login)
         else
-          super
+          require_user
         end
+      end
+
+      def admin_user
+        current_user
       end
     end
   end
