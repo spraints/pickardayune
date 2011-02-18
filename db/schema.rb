@@ -10,13 +10,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110217121023) do
+ActiveRecord::Schema.define(:version => 20110218142544) do
+
+  create_table "login_accounts", :force => true do |t|
+    t.string   "type"
+    t.integer  "user_id"
+    t.string   "remote_account_id"
+    t.string   "name"
+    t.string   "login"
+    t.string   "picture_url"
+    t.string   "access_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "login_accounts", ["type"], :name => "index_login_accounts_on_type"
+  add_index "login_accounts", ["user_id"], :name => "index_login_accounts_on_user_id"
 
   create_table "stories", :force => true do |t|
     t.string   "title"
     t.string   "edition"
     t.string   "column"
     t.text     "paragraphs"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "remember_token"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
