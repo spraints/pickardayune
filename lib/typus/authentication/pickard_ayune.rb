@@ -7,11 +7,7 @@ module Typus
       include Base
 
       def authenticate
-        if current_user.present?
-          redirect_to root_path unless %W(spraints farmingengineer).include?(current_user.login_account.login)
-        else
-          require_user
-        end
+        require_user
       end
 
       def admin_user
