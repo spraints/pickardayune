@@ -1,0 +1,16 @@
+.page
+  .masthead
+    %h1
+      =link_to 'Pickard Ayune', root_path
+  .content
+    #omnisocial-login
+      -if flash[:error]
+        .error
+          %p=flash[:error]
+      .information
+        %h1 Sign in (or up)
+        %p.large
+          You can sign in on this site using your Twitter account.
+        %p
+          It'll only take a second, and your information will be perfectly safe. We don't get access to your password and we won't post or tweet anything from your account without your explicit permission.
+      = big_twitter_login_button

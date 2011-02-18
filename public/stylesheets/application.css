@@ -5,6 +5,11 @@
 body {
   background-color: gray; }
 
+#omnisocial-login {
+  padding: 2em;
+  padding-bottom: 10em;
+  font-size: medium; }
+
 .page {
   background-color: white;
   color: black;
