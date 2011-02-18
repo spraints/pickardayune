@@ -4,11 +4,13 @@
 
 Story:
   fields:
-    default: title, edition, column, paragraphs
-    form: title, edition, column, paragraphs
-  order_by: 
-  relationships: 
-  filters: created_at
-  search: title
-  application: pickardayune
+    form: title, edition, column, content_for_edit
+    list: title, edition, column
+    options:
+      selectors: column
+      templates:
+        content_for_edit: text
+  order_by: -edition, column
+  search: title, edition
+  application: Pickard Ayune
 
