@@ -1,7 +1,3 @@
-# Typus Models Configuration File
-#
-# Use the README file as a reference to customize settings.
-
 Story:
   fields:
     form: title, edition, column, content_for_edit
@@ -12,5 +8,17 @@ Story:
         content_for_edit: text
   order_by: -edition, column
   search: title, edition
+  application: Pickard Ayune
+
+User:
+  fields:
+    default: login, name, role
+    form: role
+    options:
+      read_only: login, name
+      selectors: role
+  order_by: 
+  filters: created_at
+  search: 
   application: Pickard Ayune
 

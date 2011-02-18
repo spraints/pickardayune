@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110218142544) do
+ActiveRecord::Schema.define(:version => 20110218195702) do
 
   create_table "login_accounts", :force => true do |t|
     t.string   "type"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20110218142544) do
     t.string   "remember_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "role"
   end
 
 end

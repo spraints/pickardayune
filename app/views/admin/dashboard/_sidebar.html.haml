@@ -1,0 +1,17 @@
+%h2 Welcome!
+
+%p You've found your way into the back room here at the Pickard Ayune.
+
+-if admin_user.applications.any?
+  %p Pick one of the categories to edit content.
+  %p
+    There is a brief
+    =link_to 'user guide', admin_user_guide_path
+    if you need some help getting started.
+-else
+  %p
+    You'll get the most out of this site if you go back to the
+    =link_to 'main site.', root_path
+  %p
+    But, if something isn't right, please get in touch with
+    <a href="http://twitter.com/spraints">Matt</a>.
