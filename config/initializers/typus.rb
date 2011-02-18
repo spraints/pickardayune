@@ -1,8 +1,8 @@
 Typus.setup do |config|
 
   # Application name.
-  config.admin_title = "pickardayune"
-  # config.admin_sub_title = ""
+  config.admin_title = "Pickard Ayune"
+  config.admin_sub_title = 'admin'
 
   # When mailer_sender is set, password recover is enabled. This email
   # address will be used in Admin::Mailer.
@@ -15,6 +15,7 @@ Typus.setup do |config|
   # Authentication: +:none+, +:http_basic+
   # Run `rails g typus:migration` if you need an advanced authentication system.
   # config.authentication = :none
+  config.authentication = :pickard_ayune
 
   # Define username and password for +:http_basic+ authentication
   # config.username = "admin"
@@ -27,11 +28,3 @@ Typus.setup do |config|
   #                       :next_label => Typus::I18n.t("Next") + " &rarr;" }
 
 end
-
-# Typus calls truncate on Story#paragraphs, which is an array.
-module ArrayHelpers
-  def truncate(*args)
-    self.inspect.truncate(*args)
-  end
-end
-Array.send :include, ArrayHelpers

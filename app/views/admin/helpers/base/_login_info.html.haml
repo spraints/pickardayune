@@ -1,0 +1,6 @@
+%ul
+  %li
+    = Typus::I18n.t("Logged as")
+    = admin_user.name
+  %li
+    = link_to Typus::I18n.t("Sign out"), logout_path
