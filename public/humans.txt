@@ -1,0 +1,19 @@
+/* TEAM */
+
+I'm Matt, and I created pickardayune.com.
+
+Contact: spraints@gmail.com
+Twitter: @spraints
+
+/* SITE */
+
+Language: English
+Tools: Rails 3
+Source: http://github.com/spraints/pickardayune
+
+/* HUMANS */
+
+If you want to know more about this humans.txt thing,
+visit http://humanstxt.org/
+
+We are humans, not machines. :)
