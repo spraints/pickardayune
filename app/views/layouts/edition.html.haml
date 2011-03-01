@@ -12,13 +12,14 @@
       %script{:src => '/example_twitter_search_results.js'}
   %body
     .page
-      .masthead
-        %h1
-          =link_to 'Pickard Ayune', root_path
-        .price
-          25&cent;
-        .date
-          = @date
+      .header
+        .name
+          %h1
+            =link_to 'Pickard Ayune', root_path
+        .byline
+          .date=  @date
+          .slogan just past Jerkwater Road
+          .price  25&cent;
       .content
         =yield
     .footer

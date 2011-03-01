@@ -28,19 +28,27 @@ a:hover {
 h1 > a:hover {
   text-decoration: none; }
 
-.masthead {
+.header {
   font-family: Copperplate, serif;
   border-bottom: solid 1px black; }
-  .masthead .price {
-    float: right; }
-  .masthead div {
-    padding: 0 1em; }
-  .masthead h1 {
+  .header h1 {
     font-family: CloisterBlack, Lucida Blackletter, Mona Lisa Solid ITC TT, serif;
     font-size: 0.8in;
     margin: 0;
     text-align: center;
     border-bottom: solid 1px black; }
+  .header .byline {
+    padding: 0 0.25in; }
+    .header .byline div {
+      display: inline-block; }
+    .header .byline .date {
+      width: 2in; }
+    .header .byline .slogan {
+      font-style: italic;
+      width: 3.5in;
+      text-align: center; }
+    .header .byline .price {
+      float: right; }
 
 .content {
   font-family: Cochin, serif;
