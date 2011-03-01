@@ -12,5 +12,6 @@ class EditionController < ApplicationController
 
   def feed
     @stories = Story.for_feed
+    response.content_type = "application/#{params[:format]}+xml"
   end
 end
