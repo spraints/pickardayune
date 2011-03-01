@@ -1,0 +1,20 @@
+!!! XML
+%rss{:version => '2.0', 'xmlns:atom' => 'http://www.w3.org/2005/Atom'}
+  %channel
+    %title       Latest news from Pickard Ayune
+    %description Latest news from Pickard Ayune
+    %link= root_url
+    %atom:link{:rel => 'self', :href => news_url(:rss)}
+    -@stories.each do |story|
+      %item
+        %title
+          = story.title
+        %description
+          - story.paragraphs.each do |p|
+            =h "<p>#{p.html_safe}</p>"
+        %guid
+          == http://pickardayune.com/stories/#{story.id}
+        %pubDate
+          = story.created_at.to_s(:rfc822)
+        %link
+          = edition_url(story.year, story.month)

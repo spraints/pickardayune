@@ -9,4 +9,8 @@ class EditionController < ApplicationController
     now = Time.now
     redirect_to edition_path(now.year, now.month)
   end
+
+  def feed
+    @stories = Story.for_feed
+  end
 end
